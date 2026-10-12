@@ -89,7 +89,7 @@ module signals_from_opcode(input wire [5:0] o, output wire [20:0] out);
 					o == 37 ? 21'b1_0_01_111111_1_00_000_1_10_11 : // load halfword unsigned
 					o == 40 ? 21'b0_0_01_111111_1_00_000_0_10_00 : // store byte
 					o == 41 ? 21'b0_0_01_111111_1_00_000_0_10_11 : // store halfword
-					o == 43 ? 21'b0_0_01_111111_1_00_000_0_10_11 : // store word
+					o == 43 ? 21'b0_0_01_111111_1_00_000_0_10_01 : // store word
 					          21'b0_1_11_111111_1_11_111_1_00_00;
 endmodule
 

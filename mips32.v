@@ -81,7 +81,7 @@ module mips32
   
   assign data_write = rt;
 
-  ram ram(CLOCK_50, pl_text, pl_data, paused, load, text_address,
+  ram ram(CLOCK_50, pl_text, pl_data, paused, load, load_type, text_address,
           data_address, data_address_display, data_write, instruction,
 			 data, data_display, pl_text_out, pl_data_out);
 
