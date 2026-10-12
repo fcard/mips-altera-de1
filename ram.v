@@ -104,7 +104,7 @@ module ram
     end
 
     if (pl_data)
-	   pl_data_out_r <= 4;
+	   pl_data_out_r <= 2;
 	 else if ((~paused | pl_data_out_r > 1) & pl_data_out_r > 0)
 	   pl_data_out_r <= pl_data_out_r - 1;
   end
